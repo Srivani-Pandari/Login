@@ -1,103 +1,160 @@
-body{
+
+*{
     margin: 0;
-    
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+margin: 0;
+padding: 0;
+height: 100%;
+}
+
+.body{
+    font-family: Josefin Sans, Regular Roman;
+    height: 100%;
+    width: 100%;
+    background-image: url(backtree.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    
-    
+
 }
 .background{
-    margin: 0;
-    background-image: url(../Images/backtree.png);
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    width:2000px;
-    height: 40vh;
-    size: 50%;
-
+   width:100%;
+   height: 263px;
+   display: flex;
+   justify-content: center;
+   
+   
 }
 .container{
-display: flex;
-flex-direction: column;
-margin:auto;
-margin-top: 200px;
-width: 680px;
+    position: relative;
+    margin-top: 81px;
+    /* margin-left: 395px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width:577px;
+    height: 687px;   
+    border-radius: 6px;
 
-background-color: #fff;
-padding-bottom: 30px;
-border-radius: 6px;
-opacity: 1;
+
 }
 .heading{
-    width:100%;
-    padding:5px 0;
-    text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+    width: 577px;
+    /* position: relative; */
+    height:58px;
+
+    /* padding: 6px 6px 0px 0px; */
+    
 }
-.img {
-    display: inline-block;
-    margin: 0 auto;
-    height: auto;
-    width: auto;
-    max-width: 200px;
+
+.amazon {
+    height: 32px;
+    width: 99px;
+    margin: 14px auto;
+    position: relative;
+    z-index:2;
+    top: -35px;
+    justify-content: center;
     
 
 }
 
-.underline_shade{
-    /* background-color: black; */
-    /* box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.1); */
-    width: 100%;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 2px;
-    margin-top: 10px;
-    
+.underline-shade{
+   
+    width: 577px;
+    height: 1px;
+    /* background: #bebdbd; */
+    box-shadow: 0 6px 3px rgba(158, 145, 145, 0.5);
+    margin-top: 14px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    }
+      
 
 
-}
+
 
 .login{
+    display: flex;
+    width: 75px;
+    height: 29px;
+    margin: -12px auto;
     padding-top: 9px;
     color:rgb(21, 143, 21);
-    font-size: 30px;
+    font-size: 29px;
     align-items: center;
-    /* margin-left: 250px; */
-    margin: auto;
+    justify-content: center;
     padding-bottom: 14px;
 }
 
 .tree{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    /* margin-left: 110px; */
-    margin: auto;
-    padding: 0px 0px 0px 60px;
+    justify-content: center;
+    width: 385px;
+    height:128px;
+   
+    margin:24px 96px;
     width:450px;
 }
 
 .inputs{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0px 96px;
     gap:10px;
+    color: green;
    
     
 }
 .inputs input{
 
-    /* box-shadow: 0 2px 0px rgba(97, 92, 92, 0.5); */
+    display: flex;
     box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
     border:none;
-    height:40px;
-    width:400px;
-    gap:9px;
-    margin-left: 130px;
+    height:25px;
+    width:385px;
     background-color: #fff;
     font-size: 14px;
-    padding:7px;
     outline:none;
+    margin-bottom: 20px;
+    align-items: flex-start;
     
     
 
+}
+.inputs input::placeholder{
+    font-family: Josefin Sans, Regular Roman;
+    color:#20B716;
+    /* width: 41px;
+    height: 16px; */
+    font-size: 16px;
+
+}
+.input1{
+    margin-bottom: 8px;
+    width: 41px;
+    height: 16px;
+}
+.input2{
+    margin-bottom: 24px;
+    width: 66px;
+    height:16px;
 }
 /* .inputs input:focus {
     border: 1px solid green; 
@@ -105,12 +162,13 @@ opacity: 1;
 } */
 
 .error{
-    color:red;
-    font-size: 12px;
-    align-items: center;
     display: flex;
-    margin-top: 5px;
-    margin-left: 130px;
+    width: 139px;
+    height: 13px;
+    color:red;
+    margin-bottom: 20px;
+    margin-left: 96px;
+    /* align-items: flex-start; */
 
 }
 .icon{
@@ -127,44 +185,75 @@ opacity: 1;
     align-items: center;
     justify-content: center;
     margin: auto;
-    height: 30px;
-    width: 400px;
+    height: 49px;
+    width: 386px;
     margin-top: 15px;
     padding: 8px 8px 8px 8px;
     color: #fff;
-    background-color: green;
+    background-color: #20B716;
     border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 16px;
+
+    
+}
+
+.Signin-text{
+    display:inline-block;
+    height:19px;
+    width: 60px;
 }
 .options{
+    font-family: Josefin Sans, Regular Roman;
     display: flex;
-    /* gap:30px; */
-    margin:20px auto 0px;
+    
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    font-size: 14px;
+    /* font-size: 14px; */
     width:400px;
+    height:auto;
+
 }
 
 .Forgot-Password{
+    /* position: absolute; */
     color: black;
+    width: 110px; /* Fixed width */
+    height: 15px; /* Fixed height */
+    font-size: 15px;
+    text-align: left; /* Aligns text within the element */
+    line-height: 15px; /* Vertically centers text */
+    margin: 0; /* Avoid conflicting margins */
+    white-space: nowrap;
+
 }
 .New-User{
-    color:red;
+    color: red;
+    width: 123px; /* Fixed width */
+    height: 15px; /* Fixed height */
+    font-size: 14px;
+    text-align: right; /* Aligns text within the element */
+    line-height: 15px; /* Vertically centers text */
+    margin: 0; /* Avoid conflicting margins */
+    
 }
 
 .or{
-    margin:auto;
-    font-size: 20px;
-    margin-bottom: 10px;
+    width:15px;
+    height:16px;
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 24px;
 }
 
 .accounts{
     
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap:16px;
     align-items: center;
+    
     
 }
 
@@ -175,25 +264,123 @@ opacity: 1;
     align-items: center;
     background-color: rgb(92, 92, 217);
     color:white;
-    padding:10px 20px;
+    /* margin: 10px auto; */
+    /* padding:12px 20px; */
     border-radius: 3px;
     cursor: pointer;
-    width: 400px;
+    width: 386px;
+    /* justify-content: center; */
     justify-content: center;
-    height: 40px;
+    align-items: center;
+    height: 46px;
     position:relative;
+    
+
+}
+.google-logo{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left:4px;
+    top: 5px;
+    
+    /* margin-left: 0px ; */
+}
+    
+.facebook-logo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top:4px;
+    left: 2px;
+    /* margin:4px 80px 2px 2px; */
 }
 
-.logo{
-    width: 43px;
-    height: 43px;
-    position: absolute;
-    left:6px
-}
 
 .info{
+    
+    /* flex: 1; */
     align-items: center;
-    /* justify-content: center; */
-    font-size: 16px;
+    justify-content: center;
+    font-size: 14px;
     font-weight: bold;
+
+    
+} 
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .inputs input {
+        max-width: 100%;
+    }
+
+    .Signin {
+        width: 90%;
+    }
+
+    .accounts {
+        width: 90%;
+    }
+
+    .account-button {
+        width: 100%;
+    }
+
+    .options {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+    
+    } 
+    
+    .background{
+        max-width: 100%;
+    }
+    .container {
+        max-width: 100%;
+        padding: 10px;
+
+    }
+   
+    
+    .inputs input {
+        max-width: 100%;
+    }
+
+    .Signin {
+        width: 100%;
+    }
+
+    .accounts {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    body {
+        overflow-y: auto; 
+        height: 100vh; 
+    }
+
+    .container {
+        max-height: 100%;
+        overflow-y: auto; 
+        width: 100%;
+    }
+    
 }
