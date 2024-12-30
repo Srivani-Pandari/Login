@@ -3,13 +3,13 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./Signup.css";
 
-// import backtree from '../Images/backtree.png';
+
 import amazon from '../Images/logo.jpeg';
 import tree from '../Images/tree.png';
 import google from '../Images/google.png';
 import facebook from '../Images/facebook.png';
-import backtree from '../Images/backtree.png';
-import icon from '../Images/minus.svg';
+// import backtree from '../Images/backtree.png';
+// import icon from '../Images/minus.svg';
 
 
 const Signup =()=>{
