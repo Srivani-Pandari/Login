@@ -409,6 +409,7 @@ height: 100%;
         max-width: 340px;
         max-height: 677px;
         padding: 10px;
+        overflow-x: hidden;
     }
 
 }
